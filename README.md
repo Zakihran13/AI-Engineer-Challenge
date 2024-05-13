@@ -1,6 +1,14 @@
 # synapsis
 ### by: MUHAMMAD SUZAKI ZAHRAN
 
+List Project Done:
+- Desain Database ✅
+- Pengumpulan Dataset ✅
+- Face Recognition ✅
+- Fatigue Analysis ✅
+- Integrasi Sistem ✅
+- Deployment ✅
+
 
 ## Preparation
 - make sure that this program already installed:
