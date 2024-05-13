@@ -1,4 +1,4 @@
-from src.synapsis.cli import cli
+from synapsis.cli import cli
 
 
 if __name__ == "__main__":

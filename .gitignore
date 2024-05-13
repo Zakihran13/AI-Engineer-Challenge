@@ -106,8 +106,10 @@ ipython_config.py
 #pdm.lock
 #   pdm stores project-wide configurations in .pdm.toml, but it is recommended to not include it
 #   in version control.
-#   https://pdm.fming.dev/#use-with-ide
+#   https://pdm-project.org/#use-with-ide
 .pdm.toml
+.pdm-python
+.pdm-build/
 
 # PEP 582; used by e.g. github.com/David-OConnor/pyflow and github.com/pdm-project/pdm
 __pypackages__/
@@ -159,12 +161,7 @@ cython_debug/
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 #.idea/
 
-
-# excluded images
-src/synapsis/model/dataset/test/labels
-src/synapsis/model/dataset/test/images
-src/synapsis/model/dataset/train/labels
 src/synapsis/model/dataset/train/images
-src/synapsis/model/dataset/valid/labels
+src/synapsis/model/dataset/train/labels
 src/synapsis/model/dataset/valid/images
-
+src/synapsis/model/dataset/valid/labels

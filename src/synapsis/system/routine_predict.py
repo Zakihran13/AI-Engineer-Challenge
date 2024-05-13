@@ -1,5 +1,5 @@
-from src.synapsis.system import predict
-from src.synapsis.db import client, transformer, statements as st
+from synapsis.system import predict
+from synapsis.db import client, transformer, statements as st
 
 from loguru import logger
 from datetime import datetime
@@ -25,7 +25,7 @@ async def process_image(
     except Exception as e:
         logger.warning(f"error while inserting data to db: {e}")
 
-    return predicted_label, dt
+    return {"kondisi": predicted_label, "terakhir_update": dt}
 
 
 async def exec_routine(source_data: str, id_karyawan: int, nama_karyawan: str):

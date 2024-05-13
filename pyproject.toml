@@ -1,12 +1,23 @@
 [project]
-name = "SYNAPSIS"
+name = "synapsis"
 version = "0.1.0"
 description = "Default template for PDM package"
 authors = [
     {name = "Zakihran13", email = "zakisuzaki13@gmail.com"},
 ]
-dependencies = []
-requires-python = ">=3.8"
+dependencies = [
+    "sqlalchemy>=2.0.30",
+    "ipykernel>=6.29.4",
+    "python-dotenv>=1.0.1",
+    "click>=8.1.7",
+    "loguru>=0.7.2",
+    "asyncio>=3.4.3",
+    "ultralytics>=8.2.14",
+    "asyncpg>=0.29.0",
+    "fastapi>=0.111.0",
+    "uvicorn>=0.29.0",
+]
+requires-python = ">=3.10"
 readme = "README.md"
 license = {text = "MIT"}
 

@@ -2,8 +2,8 @@ import click
 import asyncio
 from loguru import logger
 
-from src.synapsis.system import routine_predict
-from src.synapsis.db import run_db
+from synapsis.system import routine_predict
+from synapsis.db import run_db
 
 
 @click.group()
@@ -23,8 +23,7 @@ def start_inferencing(source_dir, id_karyawan, nama_karyawan):
     res = loop.run_until_complete(
         routine_predict.exec_routine(source_dir, id_karyawan, nama_karyawan)
     )
-
-    return res
+    click.echo(res)
 
 
 @cli.command()

@@ -1,4 +1,4 @@
-from src.synapsis.db import entities as e
+from synapsis.db import entities as e
 
 from sqlalchemy.dialects.postgresql import insert
 from sqlalchemy.ext.asyncio import AsyncConnection
@@ -10,7 +10,7 @@ async def update_db(conn: AsyncConnection, data: dict):
     
     stmt = insert(e.Karyawan).values(data)
     on_update_stmt = stmt.on_conflict_do_update(
-        index_elements=["id_karyawan", "nama_pegawai"],
+        index_elements=["id_karyawan", "nama_karyawan"],
         set_=dict(stmt.excluded)
     )
 

@@ -1,9 +1,11 @@
-path: D:/CHALLENGES/synapsis/model/datasets/
+path: ../dataset
 
-train: D:/CHALLENGES/synapsis/model/dataset/train/images
-val: D:/CHALLENGES/synapsis/model/dataset/valid/images
-test: D:/CHALLENGES/synapsis/model/dataset/test/images
+train: D:/CHALLENGES/synapsis-pdm/src/synapsis/model/dataset/train/images
+val: D:/CHALLENGES/synapsis-pdm/src/synapsis/model/dataset/valid/images
 
 names: 
   0: fatigue
-  1: unfatigue
+  1: normal
+
+
+  
