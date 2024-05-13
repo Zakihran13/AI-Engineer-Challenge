@@ -37,5 +37,14 @@
     - use `http://0.0.0.0:8000/start_inferencing` for running the inferencing process. the inferencing needs 3 parameters that input inside json body:
         - `id_karyawan` : id of the worker.
         - `nama_karyawan` : name of the worker.
-        - `source_dir` : image dir path, make sure that this image is inside `SYNAPSIS/src/synapsis/model/model training/testing-images` before running the `docker build`
+        - `source_dir` : image dir path, make sure that this image is inside `SYNAPSIS/src/synapsis/model/model training/testing-images` before running the `docker build`.
+
+example of body json for postman:
+```
+{
+    "id_karyawan":"123456789",
+    "nama_karyawan":"KYUNGSOO",
+    "source_dir":"src/synapsis/model/model training/testing-images/test - single.jpg"
+}
+```
         
