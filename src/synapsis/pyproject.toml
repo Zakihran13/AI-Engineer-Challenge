@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "synapsis"
+version = "0.1.0"
+description = ""
+authors = ["Zakihran13 <zakisuzaki13@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pandas = "^2.2.2"
+ultralytics = "^8.2.13"
+sqlalchemy = "^2.0.30"
+python-dotenv = "^1.0.1"
+click = "^8.1.7"
+ipykernel = "^6.29.4"
+loguru = "^0.7.2"
+asyncio = "^3.4.3"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
